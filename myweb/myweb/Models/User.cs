@@ -10,9 +10,8 @@ namespace myweb.Models
         public int Id { get; set; }
         private bool IsLoginedIn { get; set; }
         public string UserName { get; set; }
-        public string LoginKey { get; set; } = null;
-        private string Password { get; set; }
-        
-
+        private string LoginKey { get; set; } = null;
+        public string Password { get; set; }
+        public Role Role { get; set; }
     }
 }

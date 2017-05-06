@@ -1,5 +1,7 @@
 ﻿using System.Web.Mvc;
 using myweb.Models;
+using System;
+
 namespace myweb.Controllers
 {
     public class HomeController : Controller
@@ -8,11 +10,13 @@ namespace myweb.Controllers
         {
             using (var context = new Context())
             {
-
+                Random random = new Random();
                 context.Employees.Add(new Employee()
                 {
-                    EmployeeNumber=6456,
-                    User= new User ()
+                    
+                   EmployeeNumber = random.Next(1000, 100000),
+
+                User = new User ()
                     {
                         UserName="Edog0049a"
                     },
