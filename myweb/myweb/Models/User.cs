@@ -7,12 +7,12 @@ namespace myweb.Models
 {
     public class User
     {
+        public int Id { get; set; }
         private bool IsLoginedIn { get; set; }
         public string UserName { get; set; }
-        public enum UserLevel
-        {
-
-        }
         public string LoginKey { get; set; } = null;
+        private string Password { get; set; }
+        
+
     }
 }
